@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
   struct tm timeinfo;
-  if (!getLocalTime(&timeInfo)) {
+  if (!getLocalTime(&timeinfo)) {
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Time Error");
